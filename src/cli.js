@@ -19,7 +19,7 @@ const path = require('path');
 const program = require('commander');
 const converter = require('./convert');
 const folderFunctions = require('./folder-functions');
-const {version} = require('../package.json');
+const version = require('../package.json');
 
 module.exports.go = function () {
 

@@ -55,6 +55,11 @@ const shortenName = (insomniaItem) => {
  */
 module.exports.convert = (options) => {
     let {folderToScan, exportFormat, replacements, determineFolder} = options;
+    let folderToScan = options.folderToScan;
+    let exportFormat = options.exportFormat;
+    let replacements = options.replacements;
+    let determineFolder = options.determineFolder;
+
     const results = utils.traverseFilesSync(folderToScan);
     if (!results) {
         return null;
