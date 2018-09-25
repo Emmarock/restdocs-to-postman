@@ -1,6 +1,6 @@
 {
   "name": "restdocs-2-postman",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Babajide Apata fix of Florian Benz",
   "description": "Converts Spring REST Docs cURL snippets to Postman and Insomnia collections",
   "license": "Apache-2.0",
@@ -14,7 +14,7 @@
   ],
   "main": "index.js",
   "bin": {
-    "restdocs-to-postman": "./bin/cli"
+    "restdocs-2-postman": "./bin/cli"
   },
   "dependencies": {
     "commander": "^2.12.2",
