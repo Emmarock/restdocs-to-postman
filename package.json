@@ -1,10 +1,10 @@
 {
-  "name": "restdocs-to-postman",
+  "name": "restdocs-2-postman",
   "version": "2.0.1",
-  "author": "Florian Benz",
+  "author": "Babajide Apata fix of Florian Benz",
   "description": "Converts Spring REST Docs cURL snippets to Postman and Insomnia collections",
   "license": "Apache-2.0",
-  "repository": "https://github.com/fbenz/restdocs-to-postman",
+  "repository": "https://github.com/Emmarock/restdocs-to-postman",
   "keywords": [
     "spring-restdocs",
     "restdocs",
@@ -18,12 +18,15 @@
   },
   "dependencies": {
     "commander": "^2.12.2",
-    "insomnia-importers": "^1.5.6"
+    "babel-cli": "^6.0.0",
+    "insomnia-importers": "^1.5.6",
+    "babel-preset-es2015": "^6.0.0"
   },
   "devDependencies": {
     "jest": "^22.0.4"
   },
   "scripts": {
+    "start": "babel-node --preset es2015 app.js",
     "test": "jest"
   }
 }
